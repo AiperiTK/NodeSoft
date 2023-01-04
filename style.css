@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.main_wrapper {
+    background: #C0DBD9;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    color: #FFFFFF;
+}
+
+header {
+    background: #7FAFF7;
+    padding: 30px;
+}
+
+header a {
+    border: none;
+    border-radius: 5px;
+    background: #A5C7F9;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    opacity: 0.5;
+    background: purple;
+    transition: 400ms;
+}
+
+.block {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 390px 590px 160px;
+    grid-template-areas:
+        "o t thr thr"
+        "fo fo fi fi";
+    gap: 15px;
+    background-color: #b3f95a;
+}
+
+.one {
+    grid-area: o;
+}
+
+.two {
+    grid-area: t;
+}
+
+.three {
+    grid-area: thr;
+}
+
+.four {
+    grid-area: fo;
+}
+
+.five {
+    grid-area: fi;
+}
+
+.item {
+    height: 198px;
+    background-color: #8ad191;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+.wrapper {
+    background-color: #88B5BF;
+    display: grid;
+    margin-bottom: 100px;
+    grid-template-columns: 1fr 1fr  1fr  1fr;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.parent {
+    height: 199px;
+    background-color: #0D89B0;
+    margin: 30px 0;
+}
+
+footer {
+    background: #7FAFF7;
+    display: flex;
+}
+
+.wrapper_for_future_content {
+    width: 1170px;
+    height: 100px;
+}
+
+.pop_up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 370px;
+    height: 370px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 20%;
+    transition: opacity 500ms;
+    visibility: hidden;
+    background: #FFFFFF;
+}
+
+.pop_up:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pop_up img {
+    width: 13px;
+    height: 23px;
+}
+
+.pop_up a {
+    width: 43px;
+    height: 39px;
+    background: #7FAFF6;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop_up a:hover {
+    opacity: 0.5;
+    background: purple;
+    transition: 400ms;
+}
+
+.pop_up h1 {
+    margin-top: 115px;
+}
